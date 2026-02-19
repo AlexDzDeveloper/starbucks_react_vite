@@ -1,0 +1,163 @@
+@use './../../styles/variables' as *;
+@use './../../styles/mixins' as *;
+
+.promo {
+	margin-top: 80px;
+	margin-bottom: 100px;
+
+	&__block-top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 54px;
+	}
+
+	&__prev {
+		max-width: 574px;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		gap: 54px;
+
+		.header span {
+			@include gradText;
+		}
+	}
+
+	&__btns {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		gap: 17px;
+
+		.select {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 35px;
+			letter-spacing: -0.02em;
+			color: #fff;
+		}
+
+		.more {
+			position: relative;
+			border-radius: 83px;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 35px;
+			letter-spacing: -0.03em;
+			color: $textColor;
+		}
+
+		.more::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			padding: 1px; // товщина рамки
+			border-radius: inherit;
+			background: linear-gradient(to bottom right, $textColor, #121517);
+			-webkit-mask:
+				linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: xor;
+					mask-composite: exclude;
+			pointer-events: none;
+		}
+	}
+
+	&__indicators {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		gap: 46px;
+
+		&-block {
+			max-width: 120px;
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: start;
+
+			.number {
+				font-family: $fontFamily;
+				font-weight: 400;
+				font-size: 62px;
+				line-height: 68px;
+				letter-spacing: -0.03em;
+				color: #fff;
+			}
+		}
+	}
+
+
+	&__img {
+		img {
+			width: 450px;
+		}
+	}
+
+	&__block-bottom {
+		margin: 0 auto;
+		margin-top: 100px;
+		max-width: 1030px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: start;
+		background-color: rgb(231, 231, 231);
+		padding: 50px 40px 15px;
+		border-radius: 46px;
+		gap: 128px;
+		position: relative;
+	}
+
+	&__proffer {
+		max-width: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+
+		&:nth-child(2) {
+
+			h3, p {
+				position: relative;
+				top: -35px;
+			}
+		}
+
+		&-img {
+			img {
+				width: 100%;
+			}
+
+			#heard {
+				width: 129px;
+				height: 144px;
+			}
+
+			#rocket {
+				width: 188px;
+				height: 182px;
+			}
+
+			#money {
+				width: 208px;
+				height: 151px;
+			}
+		}
+
+		&-text {
+			text-align: center;
+			color: rgba(18, 21, 23, 0.9);
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 32px;
+			letter-spacing: -0.02em;
+		}
+	}
+}

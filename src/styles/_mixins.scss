@@ -1,0 +1,20 @@
+@use './variables' as *;
+
+@mixin gradText {
+	background: $leftPlaceGrad;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+};
+
+@mixin greenRound {
+	position: relative;
+	right: 0;
+	background: $greenRound;
+	background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	filter: blur(165px);
+}

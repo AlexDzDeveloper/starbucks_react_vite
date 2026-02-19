@@ -1,0 +1,52 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+body {
+	font-family: $fontFamily;
+	background-color: #121517;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $fontFamily;
+}
+
+.container {
+	width: 1290px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.header {
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 87px;
+	letter-spacing: -0.03em;
+	color: #fff;
+}
+
+.header__smoll, .subheader {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 52px;
+	letter-spacing: -0.02em;
+}
+
+.descr {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: -0.02em;
+	color: $textColor;
+}
+
+.btn {
+	width: 168px;
+	height: 75px;
+	border-radius: 83px;
+	background: #121517;
+}
+
+.btn-active {
+	width: 326px;
+	background: $btnGrad;
+}
