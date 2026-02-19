@@ -70,7 +70,10 @@ const Footer = () => {
 
       <div className="footer__actions">
         <a href="#" className="footer__instagram">
-          📷
+          <img
+            src="./src/images/footer/images/inst.svg"
+            alt="Instagram logo"
+          ></img>
         </a>
         <button className="footer__scrollTop">↑</button>
       </div>
