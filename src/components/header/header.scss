@@ -1,0 +1,50 @@
+@use './../../styles/variables'as *;
+@use './../../styles/mixins' as *;
+
+header {
+	margin-top: 48px;
+}
+
+.header__row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+
+	&-logo{
+		font-weight: 800;
+		font-size: 37px;
+		line-height: 109%;
+		letter-spacing: -0.03em;
+		background: $leftPlaceGrad;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		-webkit-text-fill-color: transparent;
+		margin-right: 93px;
+	}
+
+	&-burger {
+		//ЕКСПЕРИМЕНТ
+		// display: none;
+		@include greenRound;
+	}
+
+	&-links {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			gap: 94px;
+			text-decoration: none;
+			list-style-type: none;
+
+			li a {
+				color: $textColor;
+				font-weight: 400;
+				font-size: 19px;
+			}
+		}
+	}
+}
