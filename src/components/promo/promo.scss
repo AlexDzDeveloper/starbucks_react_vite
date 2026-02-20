@@ -21,6 +21,14 @@
 		align-items: start;
 		gap: 54px;
 
+		.header {
+			&::before {
+				@include greenShadow;
+				top: 200px;
+				left: 400px;
+			}
+		}
+
 		.header span {
 			@include gradText;
 		}
@@ -49,21 +57,32 @@
 			line-height: 35px;
 			letter-spacing: -0.03em;
 			color: $textColor;
-		}
 
-		.more::before {
-			content: "";
-			position: absolute;
-			inset: 0;
-			padding: 1px; // товщина рамки
-			border-radius: inherit;
-			background: linear-gradient(to bottom right, $textColor, #121517);
-			-webkit-mask:
-				linear-gradient(#fff 0 0) content-box,
-				linear-gradient(#fff 0 0);
-			-webkit-mask-composite: xor;
-					mask-composite: exclude;
-			pointer-events: none;
+			&::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				padding: 1px; // товщина рамки
+				border-radius: inherit;
+				background: linear-gradient(to bottom right, $textColor, #121517);
+				-webkit-mask:
+					linear-gradient(#fff 0 0) content-box,
+					linear-gradient(#fff 0 0);
+				-webkit-mask-composite: xor;
+						mask-composite: exclude;
+				mask:
+					linear-gradient(#fff 0 0) content-box exclude,
+					linear-gradient(#fff 0 0);
+				mask-composite: exclude;
+				pointer-events: none;
+			}
+
+			&::after {
+				@include whiteShadow;
+				top: 40px;
+				width: 90px;
+				height: 90px;
+			}
 		}
 	}
 
@@ -88,12 +107,49 @@
 				line-height: 68px;
 				letter-spacing: -0.03em;
 				color: #fff;
+
+				&::after {
+					@include plus;
+				}
+			}
+
+			.descr {
+				position: relative;
+				top: -65px;
 			}
 		}
 	}
 
 
 	&__img {
+		&:before {
+
+		}
+
+		&:after {
+
+		}
+
+		&-badge {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 23px;
+			position: absolute;
+			top: 140px;
+			right: 400px;
+			width: 220px;
+			height: 220px;
+			font-weight: 500;
+			font-size: 55px;
+			line-height: normal;
+			letter-spacing: -0.03em;
+			color: #fff;
+			background: url('/src/images//stars/star_1.png') no-repeat center / contain;
+			transform: rotate(-15deg);
+			z-index: 10;
+		}
+
 		img {
 			width: 450px;
 		}
@@ -106,12 +162,31 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		align-items: start;
+		align-items: center;
 		background-color: rgb(231, 231, 231);
-		padding: 50px 40px 15px;
+		padding: 30px 40px 15px;
 		border-radius: 46px;
 		gap: 128px;
 		position: relative;
+
+		&::before {
+			@include greenShadow;
+			top: -30px;
+			right: 900px;
+		}
+
+		&::after {
+			@include whiteShadow;
+			top: 380px;
+			// right: -50px;
+		}
+
+		&_badge {
+			@include haveStar;
+			position: absolute;
+			top: -51px;
+			left: -56px;
+		}
 	}
 
 	&__proffer {
@@ -122,27 +197,47 @@
 		align-items: center;
 		gap: 5px;
 
-		&:nth-child(2) {
-
+		&:nth-child(1) {
 			h3, p {
 				position: relative;
-				top: -35px;
+				top: -15px;
 			}
 		}
 
+		&:nth-child(2) {
+			h3, p {
+				position: relative;
+				top: -25px;
+			}
+		}
+
+
 		&-img {
+			display: inline-block;
+			position: relative;
+			top: 0;
+
+			&::after {
+				@include greenCircle;
+				// top: -100%;
+			}
+
 			img {
 				width: 100%;
+				position: relative;
+				z-index: 5;
 			}
 
 			#heard {
-				width: 129px;
-				height: 144px;
+				width: 146px;
+				height: 183px;
 			}
 
 			#rocket {
-				width: 188px;
-				height: 182px;
+				// width: 188px;
+				width: 218px;
+				// height: 182px;
+				height: 211px;
 			}
 
 			#money {
