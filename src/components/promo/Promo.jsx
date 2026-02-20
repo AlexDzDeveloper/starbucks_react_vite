@@ -3,6 +3,7 @@ import main from './../../images/promo.png';
 import heart from './../../images/proffer/heart.png';
 import rocket from './../../images/proffer/rocket.png';
 import money from './../../images/proffer/money.png';
+import badge from './../../images/stars/star_1.png';
 
 function Promo() {
 	return (<>
@@ -32,10 +33,12 @@ function Promo() {
 						</div>
 					</div>
 					<div className="promo__img">
+						<div className="promo__img-badge">45%</div>
 						<img src={main} alt="promo" />
 					</div>
 				</div>
 				<div className="promo__block-bottom">
+					<div className="promo__block-bottom_badge">we have</div>
 					<div className="promo__proffer">
 						<div className="promo__proffer-img">
 							<img src={heart} alt="heart" id='heard'/>

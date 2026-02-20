@@ -8,8 +8,9 @@
 	-webkit-text-fill-color: transparent;
 };
 
-@mixin greenRound {
-	position: relative;
+@mixin greenShadow {
+	content: '';
+	position: absolute;
 	right: 0;
 	background: $greenRound;
 	background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);;
@@ -17,4 +18,67 @@
 	height: 250px;
 	border-radius: 50%;
 	filter: blur(165px);
+	z-index: -3;
+}
+
+@mixin whiteShadow {
+	content: '';
+	position: absolute;
+	right: 0;
+	background: $greenRound;
+	background: linear-gradient(245deg, rgba(217, 217, 217, 0.33) 0%, rgba(242, 242, 242, 0.73) 51.85%);;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	filter: blur(120px);
+	z-index: -3;
+}
+
+@mixin greenCircle {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 148px;
+	height: 148px;
+	z-index: 1;
+	border-radius: 50%;
+	background: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+	box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+}
+
+@mixin plus {
+	content: '+';
+	display: block;
+	position: relative;
+	top: -65px;
+	right: -75px;
+	background: $rightPlaceGrad;
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin haveStar {
+	content: '';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px 23px;
+	position: absolute;
+	width: 178px;
+	height: 178px;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 28px;
+	text-transform: uppercase;
+	letter-spacing: -0.03em;
+	text-align: center;
+	color: #fff;
+	background: url('/src/images/stars/star_2.png') no-repeat center / contain;
+	z-index: 10;
 }
