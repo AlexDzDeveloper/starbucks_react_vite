@@ -25,9 +25,11 @@ header {
 	}
 
 	&-burger {
+
 		//ЕКСПЕРИМЕНТ
-		// display: none;
-		@include greenRound;
+		display: none;
+		// @include greenShadow;
+		// @include whiteShadow;
 	}
 
 	&-links {
