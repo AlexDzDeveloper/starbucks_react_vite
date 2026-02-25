@@ -1,6 +1,3 @@
-@use './../../styles/variables' as *;
-@use './../../styles/mixins' as *;
-
 .promo {
 	margin-top: 80px;
 	margin-bottom: 100px;
@@ -23,9 +20,11 @@
 
 		.header {
 			&::before {
-				@include greenShadow;
+				@include greenShadow(250px, 250px);
 				top: 200px;
 				left: 400px;
+				// width: 250px;
+				// height: 250px;
 			}
 		}
 
@@ -78,10 +77,10 @@
 			}
 
 			&::after {
-				@include whiteShadow;
+				@include whiteShadow(90px, 90px);
 				top: 40px;
-				width: 90px;
-				height: 90px;
+				// width: 90px;
+				// height: 90px;
 			}
 		}
 	}
@@ -122,12 +121,23 @@
 
 
 	&__img {
+		// position: absolute;
 		&:before {
-
+			@include whiteShadow(120px, 120px);
+			filter: blur(60px);
+			right: 680px;
+			top: 270px;
+			// width: 120px;
+			// height: 120px;
 		}
 
 		&:after {
-
+			@include greenShadow(310px, 310px);
+			// width: 310px;
+			// height: 310px;
+			filter: blur(100px);
+			right: 400px;
+			top: 500px;
 		}
 
 		&-badge {
@@ -170,14 +180,18 @@
 		position: relative;
 
 		&::before {
-			@include greenShadow;
+			@include greenShadow(250px, 250px);
+			// width: 250px;
+			// height: 250px;
 			top: -30px;
 			right: 900px;
 		}
 
 		&::after {
-			@include whiteShadow;
+			@include whiteShadow(120px, 120px);
 			top: 380px;
+			// width: 120px;
+			// height: 120px;
 			// right: -50px;
 		}
 
@@ -197,14 +211,14 @@
 		align-items: center;
 		gap: 5px;
 
-		&:nth-child(1) {
+		&:nth-child(2) {
 			h3, p {
 				position: relative;
 				top: -15px;
 			}
 		}
 
-		&:nth-child(2) {
+		&:nth-child(3) {
 			h3, p {
 				position: relative;
 				top: -25px;
