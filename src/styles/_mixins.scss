@@ -8,27 +8,27 @@
 	-webkit-text-fill-color: transparent;
 };
 
-@mixin greenShadow {
+@mixin greenShadow($width, $height) {
 	content: '';
 	position: absolute;
 	right: 0;
 	background: $greenRound;
 	background: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.73) 51.85%);;
-	width: 250px;
-	height: 250px;
+	width: $width;
+	height: $height;
 	border-radius: 50%;
 	filter: blur(165px);
 	z-index: -3;
 }
 
-@mixin whiteShadow {
+@mixin whiteShadow($width, $height) {
 	content: '';
 	position: absolute;
 	right: 0;
 	background: $greenRound;
 	background: linear-gradient(245deg, rgba(217, 217, 217, 0.33) 0%, rgba(242, 242, 242, 0.73) 51.85%);;
-	width: 120px;
-	height: 120px;
+	width: $width;
+	height: $height;
 	border-radius: 50%;
 	filter: blur(120px);
 	z-index: -3;
