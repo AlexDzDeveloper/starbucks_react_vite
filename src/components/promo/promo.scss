@@ -23,8 +23,6 @@
 				@include greenShadow(250px, 250px);
 				top: 200px;
 				left: 400px;
-				// width: 250px;
-				// height: 250px;
 			}
 		}
 
@@ -79,8 +77,6 @@
 			&::after {
 				@include whiteShadow(90px, 90px);
 				top: 40px;
-				// width: 90px;
-				// height: 90px;
 			}
 		}
 	}
@@ -121,23 +117,20 @@
 
 
 	&__img {
-		// position: absolute;
+		position: relative;
+
 		&:before {
 			@include whiteShadow(120px, 120px);
 			filter: blur(60px);
-			right: 680px;
-			top: 270px;
-			// width: 120px;
-			// height: 120px;
+			left: 30px;
+			top: 70px;
 		}
 
 		&:after {
 			@include greenShadow(310px, 310px);
-			// width: 310px;
-			// height: 310px;
-			filter: blur(100px);
-			right: 400px;
-			top: 500px;
+			filter: blur(90px);
+			right: 20px;
+			bottom: 30px;
 		}
 
 		&-badge {
@@ -146,8 +139,8 @@
 			justify-content: center;
 			padding-bottom: 23px;
 			position: absolute;
-			top: 140px;
-			right: 400px;
+			top: -40px;
+			right: 10px;
 			width: 220px;
 			height: 220px;
 			font-weight: 500;
@@ -162,6 +155,41 @@
 
 		img {
 			width: 450px;
+		}
+	}
+
+	&__lines {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		gap: 26px;
+
+		span {
+			width: 850px;
+			height: 600px;
+
+			img {
+				position: absolute;
+				zoom: 180%;
+				z-index: -4;
+			}
+
+			img#line1 {
+				top: -250px;
+				right: 140px;
+			}
+
+			img#line2 {
+				top: -230px;
+				right: 125px;
+			}
+
+			img#line3 {
+				top: -210px;
+				right: 110px;
+			}
 		}
 	}
 
@@ -181,8 +209,6 @@
 
 		&::before {
 			@include greenShadow(250px, 250px);
-			// width: 250px;
-			// height: 250px;
 			top: -30px;
 			right: 900px;
 		}
@@ -190,9 +216,6 @@
 		&::after {
 			@include whiteShadow(120px, 120px);
 			top: 380px;
-			// width: 120px;
-			// height: 120px;
-			// right: -50px;
 		}
 
 		&_badge {
@@ -233,7 +256,6 @@
 
 			&::after {
 				@include greenCircle;
-				// top: -100%;
 			}
 
 			img {
@@ -248,9 +270,7 @@
 			}
 
 			#rocket {
-				// width: 188px;
 				width: 218px;
-				// height: 182px;
 				height: 211px;
 			}
 

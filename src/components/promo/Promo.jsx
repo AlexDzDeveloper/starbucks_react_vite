@@ -4,6 +4,7 @@ import heart from './../../images/proffer/heart.png';
 import rocket from './../../images/proffer/rocket.png';
 import money from './../../images/proffer/money.png';
 import badge from './../../images/stars/star_1.png';
+import wave from './../../images/wave.png';
 
 function Promo() {
 	return (<>
@@ -35,6 +36,11 @@ function Promo() {
 					<div className="promo__img">
 						<div className="promo__img-badge">45%</div>
 						<img src={main} alt="promo" />
+						<div className="promo__lines">
+							<span><img src={wave} alt="wave" id='line1'/></span>
+							<span><img src={wave} alt="wave" id='line2'/></span>
+							<span><img src={wave} alt="wave" id='line3'/></span>
+						</div>
 					</div>
 				</div>
 				<div className="promo__block-bottom">
