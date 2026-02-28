@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import InstLogo from "../../images/footer/inst.svg";
+import Arrow from "../../images/footer/Arrowbutton.png";
 
 const Footer = () => {
   return (
@@ -73,6 +74,7 @@ const Footer = () => {
         <div className="footer__actions">
           <a href="#" className="footer__instagram">
             <img src={InstLogo} alt="Instagram logo"></img>
+            <img src={Arrow} alt="arrow" />
           </a>
           <button className="footer__scrollTop">↑</button>
         </div>
