@@ -169,6 +169,7 @@
 		span {
 			width: 850px;
 			height: 600px;
+			position: absolute;
 
 			img {
 				position: absolute;
@@ -177,17 +178,17 @@
 			}
 
 			img#line1 {
-				top: -250px;
+				top: -80px;
 				right: 140px;
 			}
 
 			img#line2 {
-				top: -230px;
+				top: -60px;
 				right: 125px;
 			}
 
 			img#line3 {
-				top: -210px;
+				top: -40px;
 				right: 110px;
 			}
 		}
