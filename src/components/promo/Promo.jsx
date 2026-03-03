@@ -37,9 +37,12 @@ function Promo() {
 						<div className="promo__img-badge">45%</div>
 						<img src={main} alt="promo" />
 						<div className="promo__lines">
-							<span><img src={wave} alt="wave" id='line1'/></span>
-							<span><img src={wave} alt="wave" id='line2'/></span>
-							<span><img src={wave} alt="wave" id='line3'/></span>
+							<img src={wave} alt="wave" id='line1'/>
+							<img src={wave} alt="wave" id='line2'/>
+							<img src={wave} alt="wave" id='line3'/>
+							{/* <span><img src={wave} alt="wave" id='line1'/></span> */}
+							{/* <span><img src={wave} alt="wave" id='line2'/></span> */}
+							{/* <span><img src={wave} alt="wave" id='line3'/></span> */}
 						</div>
 					</div>
 				</div>
