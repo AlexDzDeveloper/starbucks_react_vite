@@ -7,14 +7,23 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__all">
-        <div className="footer__brand">StarBucks</div>
+        <div className="footer__sociall">
+          <div className="footer__brand">StarBucks</div>
+          <li>
+            <a className="footer__tel" href="tel:+79999999999">
+              +7-999-999-99-99
+            </a>
+          </li>
+        </div>
 
         <div className="footer__columns">
           <div className="footer__column">
-            <h4>Main</h4>
+            <h4 className="footer__item">Main</h4>
             <ul>
               <li>
-                <a href="#">Buy</a>
+                <a className="footer__a" href="#">
+                  Buy
+                </a>
               </li>
               <li>
                 <a href="#">More</a>
@@ -23,10 +32,12 @@ const Footer = () => {
           </div>
 
           <div className="footer__column">
-            <h4>We make</h4>
+            <h4 className="footer__item">We make</h4>
             <ul>
               <li>
-                <a href="#">Process</a>
+                <a className="footer__a" href="#">
+                  Process
+                </a>
               </li>
             </ul>
           </div>
@@ -35,10 +46,14 @@ const Footer = () => {
             <h4>Products</h4>
             <ul>
               <li>
-                <a href="#">Cappuccino</a>
+                <a className="footer__a" href="#">
+                  Cappuccino
+                </a>
               </li>
               <li>
-                <a href="#">Fast</a>
+                <a className="footer__a" href="#">
+                  Fast
+                </a>
               </li>
               <li>
                 <a href="#">Fast</a>
@@ -47,25 +62,28 @@ const Footer = () => {
           </div>
 
           <div className="footer__column">
-            <h4>Events</h4>
+            <h4 className="footer__item">Events</h4>
             <ul>
               <li>
-                <a href="#">Drinks</a>
+                <a className="footer__a" href="#">
+                  Drinks
+                </a>
               </li>
               <li>
-                <a href="#">Eat</a>
+                <a className="footer__a" href="#">
+                  Eat
+                </a>
               </li>
             </ul>
           </div>
 
           <div className="footer__column">
-            <h4>Contacts</h4>
+            <h4 className="footer__item">Contacts</h4>
             <ul>
               <li>
-                <a href="#">Instagram</a>
-              </li>
-              <li>
-                <a href="tel:+79999999999">+7-999-999-99-99</a>
+                <a className="footer__a" href="#">
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
@@ -76,7 +94,6 @@ const Footer = () => {
             <img src={InstLogo} alt="Instagram logo"></img>
             <img src={Arrow} alt="arrow" />
           </a>
-          <button className="footer__scrollTop">↑</button>
         </div>
       </div>
     </footer>

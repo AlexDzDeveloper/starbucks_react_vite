@@ -19,8 +19,50 @@
     padding: 20px 0;
     background-color: #121517;
   }
+  &__tel {
+    color: #237249;
+    font-size: 26px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+  }
   &__columns {
     display: flex;
     gap: 50px;
+
+    color: #bbb3b3;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  &__column {
+    color: #bbb3b3;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+    text-transform: none;
+    text-decoration: none;
   }
 }
