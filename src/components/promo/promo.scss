@@ -19,6 +19,8 @@
 		gap: 54px;
 
 		.header {
+			position: relative;
+
 			&::before {
 				@include greenShadow(250px, 250px);
 				top: 200px;
@@ -180,7 +182,6 @@
 		}
 
 		img#line1 {
-			top: 110px;
 			top: 120px;
 			right: 136px;
 		}
@@ -194,33 +195,6 @@
 			top: 180px;
 			right: 80px;
 		}
-
-		// span {
-		// 	width: 850px;
-		// 	height: 600px;
-		// 	position: absolute;
-
-		// 	img {
-		// 		position: absolute;
-		// 		zoom: 180%;
-		// 		z-index: -4;
-		// 	}
-
-		// 	img#line1 {
-		// 		top: -80px;
-		// 		right: 140px;
-		// 	}
-
-		// 	img#line2 {
-		// 		top: -60px;
-		// 		right: 125px;
-		// 	}
-
-		// 	img#line3 {
-		// 		top: -40px;
-		// 		right: 110px;
-		// 	}
-		// }
 	}
 
 	&__block-bottom {
@@ -323,8 +297,273 @@
 
 @media (max-width: 1200px) {
 	.promo {
+		&__block {
+			&-top {
+				justify-content: center;
+				gap: 20px;
+			}
+		}
+
+		&__prev {
+			max-width: 400px;
+
+			.header {
+				font-size: 60px;
+
+				&::before {
+					top: 50px;
+					left: 50px;
+					width: 180px;
+					height: 180px;
+					filter: blur(120px)
+				}
+			}
+
+			p {
+				font-size: 18px;
+			}
+		}
+
+		&__btns {
+			.select {
+				width: 260px;
+				font-size: 22px;
+			}
+
+			.more {
+				font-size: 22px;
+			}
+		}
+
+		&__indicators {
+			gap: 30px;
+
+			&-block {
+				.number {
+					font-size: 45px;
+
+					&:after {
+						right: -55px;
+					}
+				}
+			}
+		}
+
+		&__img {
+			&:after {
+				width: 150px;
+				height: 150px;
+			}
+
+			img {
+				width: 400px;
+			}
+			&-badge {
+				width: 180px;
+				height: 180px;
+				font-size: 40px;
+			}
+		}
+
 		&__lines {
-			right: -100px;
+			right: -85px;
+			top: 140px;
+
+			img {
+				transform: scale(1.9);
+			}
+
+			img#line1 {
+				right: 125px;
+			}
+
+			img#line2 {
+				right: 103px;
+			}
+
+			// img#line3 {
+
+			// }
+		}
+
+		&__block {
+			&-bottom {
+				margin-top: 60px;
+				gap: 80px;
+				padding: 15px 30px 10px;
+
+				&:after {
+					top: 250px;
+				}
+
+				&_badge {
+					width: 160px;
+					height: 160px;
+					font-size: 22px;
+					padding: 0 30px 23px;
+				}
+			}
+		}
+
+		&__proffer {
+			max-width: 190px;
+
+			&-img {
+				&::after {
+					width: 125px;
+					height: 125px;
+				}
+
+				#heard {
+					width: 131px;//-10%
+					width: 124px;//-15%
+					height: 165px;//-10%
+					height: 156px;//-15%
+				}
+
+				#rocket {
+					width: 196px;//-10%
+					width: 185px;//-15%
+					height: 190px;//-10%
+					height: 179px;//-15%
+				}
+
+				#money {
+					width: 187px;//-10%
+					width: 176px;//-15%
+					height: 136px;//-10%
+					height: 128px;//-15%
+				}
+			}
+
+			h3 {
+				font-size: 26px;
+			}
+
+			p {
+				font-size: 18px;
+				line-height: 26px;
+			}
+		}
+	}
+}
+
+@media(max-width: 991px) {
+	.promo {
+		&__block {
+			&-top {
+				flex-direction: column-reverse;
+			}
+		}
+
+		&__prev {
+			max-width: 600px;
+			gap: 30px;
+
+			.header {
+				font-size: 45px;
+				line-height: 60px;
+			}
+		}
+
+		&__btns {
+			margin: 0 auto;
+			justify-content: center;
+			gap: 30px;
+
+			.btn {
+				height: 62px;
+			}
+		}
+
+		&__indicators {
+			margin: 0 auto;
+			gap: 23px;
+
+			&-block {
+				.number {
+					font-size: 34px;
+					line-height: 60px;
+
+					&:after {
+						right: -42px;
+						top: -58px;
+					}
+				}
+
+				.descr {
+					font-size: 18px;
+					line-height: 25px;
+				}
+			}
+		}
+
+		&__img {
+			img {
+				width: 310px;
+			}
+
+			&-badge {
+				width: 160px;
+				height: 160px;
+				font-size: 34px;
+			}
+		}
+
+		&__lines {
+			width: 450px;
+			height: 400px;
+			right: -80px;
+			top: 25px;
+		}
+
+		&__block {
+			&-bottom {
+				margin-top: 20px;
+				gap: 40px;
+				max-width: 650px;
+
+				&_badge {
+					width: 140px;
+					height: 140px;
+					font-size: 20px;
+				}
+			}
+		}
+
+		&__proffer {
+			max-width: 160px;
+			gap: 0;
+
+			&-img {
+				&:after {
+					width: 105px;
+					height: 105px;
+				}
+				#heard {
+					width: 105px;
+					height: 133px;
+				}
+
+				#rocket {
+					width: 157px;
+					height: 152px;
+				}
+
+				#money {
+					width: 150px;
+					height: 109px;
+				}
+			}
+
+			h3 {
+				font-size: 22px;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 20px;
+			}
 		}
 	}
 }

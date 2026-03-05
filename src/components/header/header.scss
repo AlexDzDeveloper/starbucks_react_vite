@@ -43,3 +43,33 @@ header {
 		}
 	}
 }
+
+@media(max-width: 1200px) {
+	.header__row {
+		&-logo {
+			font-size: 45px;
+		}
+
+		&-links ul li a {
+			font-size: 22px;
+		}
+	}
+}
+
+@media(max-width: 991px) {
+	.header__row {
+		justify-content: space-between;
+
+		&-logo {
+			font-size: 38px;
+		}
+
+		&-links ul {
+			gap: 60px;
+		}
+
+		&-links ul li a {
+			font-size: 20px;
+		}
+	}
+}
