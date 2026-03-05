@@ -4,7 +4,7 @@ import heart from './../../images/proffer/heart.png';
 import rocket from './../../images/proffer/rocket.png';
 import money from './../../images/proffer/money.png';
 import badge from './../../images/stars/star_1.png';
-import wave from './../../images/wave.png';
+import wave from './../../images/wave1.png';
 
 function Promo() {
 	return (<>
@@ -13,7 +13,7 @@ function Promo() {
 				<div className="promo__block-top">
 					<div className="promo__prev">
 						<h2 className="header">New Cafe <br/>by <span>StarBucks</span></h2>
-						<p className="descr">Have time to buy the most harmonious drinks in the <br/> new Starbucks coffee and don't forget about the discount!</p>
+						<p className="descr">Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!</p>
 						<div className="promo__btns">
 							<button className="btn btn-active select">Select a coffee </button>
 							<button className="btn more">More</button>
