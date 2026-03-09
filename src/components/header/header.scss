@@ -106,3 +106,17 @@ header {
 		}
 	}
 }
+
+@media(max-width: 575px) {
+	.header {
+		&__row {
+			&-logo {
+				font-size: 22px;
+			}
+
+			&-burger {
+				gap: 6px;
+			}
+		}
+	}
+}
