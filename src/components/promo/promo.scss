@@ -569,5 +569,86 @@
 }
 
 @media(max-width: 767px) {
+	.promo {
+		&__prev {
+			gap: 25px;
 
+			.header {
+				font-size: 48px;
+			}
+		}
+
+		&__btns {
+			.select, .more {
+				font-size: 20px;
+			}
+		}
+
+		&__img {
+			img {
+				width: 270px;
+			}
+
+			&-badge {
+				width: 145px;
+				height: 145px;
+				font-size: 30px;
+			}
+		}
+
+		&__lines {
+			height: 370px;
+		}
+
+		&__block {
+			&-bottom {
+				gap: 24px;
+				max-width: 470px;
+				padding: 7px 22px 0;
+
+				&_badge {
+					width: 120px;
+					height: 120px;
+					font-size: 18px;
+					line-height: 22px;
+				}
+			}
+		}
+
+		&__proffer {
+			gap: 5px;
+			max-width: 130px;
+
+			&-img {
+				&:after {
+					width: 90px;
+					height: 90px;
+				}
+
+				#heard {
+					width: 89px;
+					height: 113px;
+				}
+
+				#rocket {
+					width: 133px;
+					height: 129px;
+				}
+
+				#money {
+					width: 128px;
+					height: 93px;
+				}
+			}
+
+			h3 {
+				font-size: 20px;
+				line-height: 45px;
+			}
+
+			&-text {
+				line-height: 18px;
+			}
+		}
+	}
 }
