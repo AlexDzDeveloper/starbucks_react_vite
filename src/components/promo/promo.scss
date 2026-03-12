@@ -652,3 +652,116 @@
 		}
 	}
 }
+
+@media (max-width: 575px) {
+	.promo {
+
+		&__img {
+			width: 240px;
+
+			&-badge {
+				width: 100px;
+				height: 100px;
+				font-size: 24px;
+				padding-bottom: 12px;
+				font-weight: 300;
+			}
+		}
+
+		&__lines {
+			width: 280px;
+			height: 350px;
+			right: -6px;
+			top: 15px;
+			gap: 10px;
+
+			img {
+				width: 280px;
+				transform: scale(1);
+
+				&#line1 {
+					right: 0;
+					top: 135px;
+				}
+
+				&#line2 {
+					right: -10px;
+				}
+
+				&#line3 {
+					right: -20px;
+				}
+			}
+		}
+
+		&__prev {
+			max-width: 280px;
+
+			.header {
+				font-size: 40px;
+			}
+
+			.descr {
+				font-size: 12px;
+				line-height: 17px;
+			}
+		}
+
+		&__btns {
+			justify-content: space-between;
+			gap: 14px;
+			padding: 0;
+
+			.select, .more {
+				height: 50px;
+				font-size: 16px;
+				font-weight: 500;
+			}
+
+			.select {
+				width: 160px;
+			}
+
+			.more {
+				width: 100px;
+			}
+
+		}
+
+		&__indicators {
+			&-block {
+				height: 120px;
+			}
+		}
+
+		&__block {
+			&-bottom {
+				flex-direction: column;
+				width: 220px;
+				gap: 0;
+				padding: 7px 22px;
+				border-radius: 27px;
+
+				&_badge {
+					width: 100px;
+					height: 100px;
+					font-size: 18px;
+					line-height: 16px;
+					padding: 0 30px 16px;
+					left: 160px;
+					top: -40px;
+				}
+			}
+		}
+
+		&__proffer {
+			h3 {
+				font-size: 18px;
+			}
+
+			p {
+				font-size: 11px;
+			}
+		}
+	}
+}
