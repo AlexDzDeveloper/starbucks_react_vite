@@ -1,83 +1,120 @@
 .footer {
+  background-color: #121517; // Переносимо фон на самий верх
+  padding: 40px 20px;
+
+  &__all {
+    display: flex;
+    justify-content: space-between; // Розштовхуємо елементи по краях
+    align-items: flex-start; // Вирівнюємо по верхньому краю
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+
+    // Адаптація для планшетів та телефонів
+    @media (max-width: 1024px) {
+      flex-direction: column; // Ставимо блоки в стовпчик
+      align-items: center; // Центруємо все
+      text-align: center;
+      gap: 30px;
+    }
+  }
+
   &__brand {
     color: #237249;
     font-size: 38px;
-    font-style: normal;
-    margin-top: 0;
-    text-align: left;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    line-height: 41px;
-    margin-bottom: 0;
+    line-height: 1;
     letter-spacing: -2px;
+    margin-bottom: 10px;
   }
-  &__all {
-    display: flex;
 
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
-    background-color: #121517;
+  &__sociall {
+    list-style: none; // Прибираємо маркери, якщо там <li>
+    padding: 0;
+
+    @media (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
   &__tel {
     color: #237249;
-    font-size: 26px;
-    font-style: normal;
-    margin-top: 0;
-    text-align: left;
+    font-size: 24px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    line-height: normal;
-    margin-bottom: 0;
-    letter-spacing: 0;
-    text-transform: none;
     text-decoration: none;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
+
   &__columns {
     display: flex;
-    gap: 50px;
+    gap: 40px;
 
-    color: #bbb3b3;
-    font-size: 20px;
-    font-style: normal;
-    margin-top: 0;
-    text-align: left;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 0;
-    letter-spacing: -1px;
-    text-transform: none;
-    text-decoration: none;
+    // На мобільних телефонах розбиваємо колонки на 2 ряди або в один стовпчик
+    @media (max-width: 768px) {
+      flex-wrap: wrap; // Дозволяємо колонкам перестрибувати на новий рядок
+      justify-content: center;
+      gap: 20px;
+    }
   }
 
   &__column {
-    color: #bbb3b3;
-    font-size: 20px;
-    font-style: normal;
-    margin-top: 0;
-    text-align: left;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 0;
-    letter-spacing: -1px;
-    text-transform: none;
-    text-decoration: none;
+    min-width: 120px;
+
+    h4 {
+      color: #bbb3b3;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
   }
 
   &__a {
     color: #656060;
-    font-size: 20px;
-    font-style: normal;
-    margin-top: 0;
-    text-align: left;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 0;
-    letter-spacing: -1px;
-    text-transform: none;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #237249; // Робимо посилання зеленими при наведенні
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__instagram {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
     text-decoration: none;
   }
 }
