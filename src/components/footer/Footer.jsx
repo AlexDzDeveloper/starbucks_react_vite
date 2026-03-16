@@ -26,7 +26,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#">More</a>
+                <a className="footer__a" href="#">
+                  More
+                </a>
               </li>
             </ul>
           </div>
@@ -56,7 +58,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#">Fast</a>
+                <a className="footer__a" href="#">
+                  Fast
+                </a>
               </li>
             </ul>
           </div>
