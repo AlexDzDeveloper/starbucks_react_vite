@@ -29,6 +29,7 @@
 		}
 
 		.header span {
+			background: $leftPlaceGrad;
 			@include gradText;
 		}
 	}

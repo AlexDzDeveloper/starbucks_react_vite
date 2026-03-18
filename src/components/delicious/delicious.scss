@@ -1,3 +1,114 @@
-// h3 {
-// 	color: #fff;
-// }
+.cooking {
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__img {
+		position: relative;
+		width: 465px;
+		height: 684px;
+		overflow: visible;
+		align-self: flex-start;
+		flex-shrink: 0;
+		line-height: 0;
+
+		img {
+			// width: 100% !important;
+       		// height: 100% !important;
+			width: 465px !important;
+    		height: 684px !important;
+			display: block;
+			object-fit: cover;
+			object-fit: none;
+		}
+
+		&::before {
+			content: '';
+			transform: translate(-30px, 30px);
+			// margin: 0 0 100px 70px;
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			background: #237249;
+			clip-path: polygon(0% 0%, 71% 0%, 100% 24%, 100% 100%, 0% 100%);
+		}
+	}
+
+	&__lines {
+		position: absolute;
+		display: flex;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		flex-shrink: 0;
+		gap: 26px;
+		width: 850px;
+		height: 600px;
+		overflow: hidden;
+		top: 200px;
+		right: -160px;
+
+		img {
+			position: absolute;
+			transform: scale(1.6);
+			z-index: -4;
+		}
+
+		img#line1 {
+			top: 120px;
+			right: 136px;
+		}
+
+		img#line2 {
+			top: 155px;
+			right: 110px;
+		}
+
+		img#line3 {
+			top: 180px;
+			right: 80px;
+		}
+	}
+
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 63px;
+		max-width: 447px;
+
+		.header span {
+			background: $rightPlaceGrad;
+			@include gradText;
+		}
+	}
+
+	&__video {
+		position: relative;
+
+		video {
+			max-width: 447px;
+			height: 275px;
+		}
+
+		button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 326px;
+			height: 75px;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 28px;
+			letter-spacing: -0.02em;
+			color: #fff;
+			opacity: 0.9;
+		}
+	}
+}
