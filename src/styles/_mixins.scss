@@ -1,7 +1,7 @@
 @use './variables' as *;
 
 @mixin gradText {
-	background: $leftPlaceGrad;
+	// background: $leftPlaceGrad;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;

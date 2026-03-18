@@ -13,12 +13,9 @@ header {
 		font-size: 37px;
 		line-height: 109%;
 		letter-spacing: -0.03em;
-		background: $leftPlaceGrad;
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
-		-webkit-text-fill-color: transparent;
 		margin-right: 93px;
+		background: $leftPlaceGrad;
+		@include gradText;
 	}
 
 	&-burger {
