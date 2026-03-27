@@ -84,7 +84,14 @@
 
 		.header span {
 			background: $rightPlaceGrad;
+			position: relative;
 			@include gradText;
+
+			&:before {
+				@include greenShadow(200px, 200px);
+				right: -130px;
+				top: -110px;
+			}
 		}
 	}
 
