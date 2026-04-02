@@ -39,39 +39,56 @@
 
 	&__lines {
 		position: absolute;
-		display: flex;
-		display: none;
+		// display: flex;
+		// display: none;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-end;
 		flex-shrink: 0;
 		gap: 26px;
-		width: 850px;
-		height: 600px;
+		width: 800px;
+		height: 560px;
 		overflow: hidden;
-		top: 200px;
-		right: -160px;
+		top: 170px;
+		right: -800px;
 
-		img {
-			position: absolute;
-			transform: scale(1.6);
-			z-index: -4;
+		svg {
+			position: relative;
 		}
 
-		img#line1 {
-			top: 120px;
-			right: 136px;
+		#firstLine {
+			top: 260px;
+			transform: rotate(-7deg);
 		}
 
-		img#line2 {
-			top: 155px;
-			right: 110px;
+		#secondLine {
+			top: 30px;
+			transform: rotate(-5deg);
 		}
+		#thirdthLine {
+			top: -205px;
+			transform: rotate(-3deg);
+		}
+		// img {
+		// 	position: absolute;
+		// 	transform: scale(1.6);
+		// 	z-index: -4;
+		// }
 
-		img#line3 {
-			top: 180px;
-			right: 80px;
-		}
+		// img#line1 {
+		// 	top: 120px;
+		// 	right: 136px;
+		// }
+
+		// img#line2 {
+		// 	top: 155px;
+		// 	right: 110px;
+		// }
+
+		// img#line3 {
+		// 	top: 180px;
+		// 	right: 80px;
+		// }
 	}
 
 
