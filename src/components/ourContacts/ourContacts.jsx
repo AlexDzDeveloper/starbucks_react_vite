@@ -1,5 +1,6 @@
 import React from "react";
 import "./ourContacts.scss";
+import ContactsImg from "../../images/contacts/main.png";
 
 function OurContacts() {
   return (
@@ -26,6 +27,9 @@ function OurContacts() {
             <span>+7-999-999-99-99</span>
           </div>
         </div>
+      </div>
+      <div className="contacts__img">
+        <img src={ContactsImg} alt="Contacts" />
       </div>
 
       <div className="contacts__decor"></div>
