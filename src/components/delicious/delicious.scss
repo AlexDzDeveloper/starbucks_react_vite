@@ -139,3 +139,41 @@
 		}
 	}
 }
+
+@media(max-width: 1200px) {
+	.cooking {
+		&__img {
+			width: 350px;
+			height: 515px;
+
+			&::before {
+				transform: translate(-25px, 25px);
+			}
+
+			.badge {
+				width: 160px;
+				height: 160px;
+				font-size: 22px;
+				padding: 0 30px 23px;
+				top: -15px;
+				right: -50px;
+			}
+		}
+
+		&__lines {
+			top: 70px;
+			right: -610px;
+			z-index: -3;
+		}
+
+		&__text {
+			gap: 10px;
+		}
+
+		&__video {
+			width: 400px;
+			height: 230px;
+		}
+	}
+
+}
