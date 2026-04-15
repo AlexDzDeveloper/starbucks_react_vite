@@ -33,6 +33,7 @@
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 24px;
   }
 
@@ -57,5 +58,20 @@
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  &__Lines {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-shrink: 0;
+    gap: 26px;
+    width: 850px;
+    height: 600px;
+    overflow: hidden;
+    top: 200px;
+    right: -8px;
   }
 }
