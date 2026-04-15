@@ -1,6 +1,7 @@
 import React from "react";
 import "./ourContacts.scss";
 import ContactsImg from "../../images/contacts/main.png";
+import ContactLines from "../../images/wave1.png";
 
 function OurContacts() {
   return (
@@ -28,8 +29,15 @@ function OurContacts() {
           </div>
         </div>
       </div>
-      <div className="contacts__img">
-        <img src={ContactsImg} alt="Contacts" />
+      <div className="contacts__imgAll">
+        <div className="contacts__img">
+          <img src={ContactsImg} alt="Contacts" />
+        </div>
+        <div className="contacts__Lines">
+          <img src={ContactLines} alt="Lines" />
+          <img src={ContactLines} alt="Lines" />
+          <img src={ContactLines} alt="Lines" />
+        </div>
       </div>
 
       <div className="contacts__decor"></div>
