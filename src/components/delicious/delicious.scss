@@ -175,5 +175,33 @@
 			height: 230px;
 		}
 	}
+}
 
+@media(max-width: 991px) {
+	.cooking {
+		&__img {
+			width: 280px;
+			height: 420px;
+		}
+
+		&__lines {
+			right: -475px;
+			top: -55px;
+		}
+
+		&__text {
+			max-width: 360px;
+		}
+
+		&__video {
+			width: 340px;
+			height: 180px;
+
+			button {
+				max-width: 260px;
+				height: 62px;
+				font-size: 18px;
+			}
+		}
+	}
 }
