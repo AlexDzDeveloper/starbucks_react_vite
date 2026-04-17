@@ -60,18 +60,49 @@
     right: 0;
   }
 
+  &__imgAll {
+    position: relative; // Створюємо систему координат для абсолютних елементів
+    display: flex;
+    justify-content: center; // Центруємо головне фото
+    align-items: center;
+    width: 100%;
+    min-height: 500px; // Задай висоту, щоб блок не схлопнувся
+  }
+
+  &__img {
+    position: relative; // Можна залишити relative, щоб воно тримало висоту блоку
+    z-index: 2; // <--- СТАВИМО НА ГОРУ
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px; // Як на макеті
+    }
+  }
+
   &__Lines {
-    position: absolute;
+    position: absolute; // <--- ВИРИВАЄМО З ПОТОКУ, щоб поставити ПІД низ
+    top: 10%; // Центруємо відносно батька
+    left: 50%;
+    // Точне центрування
+    z-index: 1; // <--- СТАВИМО ПІД ФОТО
+
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    flex-shrink: 0;
-    gap: 26px;
-    width: 850px;
-    height: 600px;
-    overflow: hidden;
-    top: 200px;
-    right: -8px;
+
+    img {
+      width: 100%; // Або фіксована ширина, якщо треба
+      height: auto;
+
+      // Твій каскадний зсув
+      &:nth-child(2) {
+        transform: translateX(20px);
+      }
+      &:nth-child(3) {
+        transform: translateX(40px);
+      }
+    }
   }
 }
