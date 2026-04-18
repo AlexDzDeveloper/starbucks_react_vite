@@ -182,6 +182,11 @@
 		&__img {
 			width: 280px;
 			height: 420px;
+
+			&::after {
+				bottom: 0;
+				left: 0;
+			}
 		}
 
 		&__lines {
@@ -202,6 +207,34 @@
 				height: 62px;
 				font-size: 18px;
 			}
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.cooking {
+		&__row {
+			flex-direction: column;
+			gap: 50px;
+		}
+
+		&__img {
+			width: 315px;
+			height: 450px;
+			margin-left: 50px;
+
+			.badge {
+				top: 60px;
+				right: -170px;
+			}
+		}
+
+		&__lines {
+			right: -200px;
+		}
+
+		&__text {
+			margin-left: 25px;
 		}
 	}
 }
