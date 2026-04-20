@@ -84,13 +84,11 @@
   &__Lines {
     position: absolute; // <--- ВИРИВАЄМО З ПОТОКУ, щоб поставити ПІД низ
     top: 10%; // Центруємо відносно батька
-    left: 50%;
+    left: 10%;
     // Точне центрування
     z-index: 1; // <--- СТАВИМО ПІД ФОТО
 
-    width: 100%;
     display: flex;
-    flex-direction: column;
 
     img {
       width: 100%; // Або фіксована ширина, якщо треба
@@ -98,10 +96,10 @@
 
       // Твій каскадний зсув
       &:nth-child(2) {
-        transform: translateX(20px);
+        transform: translateX(1px);
       }
       &:nth-child(3) {
-        transform: translateX(40px);
+        transform: translateX(1px);
       }
     }
   }
