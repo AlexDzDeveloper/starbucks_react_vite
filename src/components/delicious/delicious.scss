@@ -238,3 +238,57 @@
 		}
 	}
 }
+
+@media(max-width: 575px) {
+	.cooking {
+
+		&__img {
+			width: 200px;
+			height: 300px;
+			margin-left: 20px;
+
+			&::before {
+				transform: translate(-15px, 15px);
+			}
+
+			.badge {
+				width: 85px;
+				height: 85px;
+				font-size: 17px;
+				line-height: 16px;
+				right: -120px;
+				top: 70px;
+				padding: 0 30px 16px;
+			}
+		}
+
+		&__lines {
+			right: -250px;
+			top: -135px;
+			transform: scale(.7) rotate(-32deg);
+		}
+
+		&__text {
+			margin-left: 0;
+			gap: 30px;
+			width: 300px;
+		}
+
+		&__video {
+			width: 300px;
+			height: 200px;
+
+			button {
+				max-width: 193px;
+				height: 45px;
+				font-size: 14px;
+				gap: 8px;
+
+				svg {
+					width: 14px;
+					height: 14px;
+				}
+			}
+		}
+	}
+}
