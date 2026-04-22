@@ -82,24 +82,28 @@
   }
 
   &__Lines {
-    position: absolute; // <--- ВИРИВАЄМО З ПОТОКУ, щоб поставити ПІД низ
-    top: 10%; // Центруємо відносно батька
-    left: 10%;
-    // Точне центрування
-    z-index: 1; // <--- СТАВИМО ПІД ФОТО
-
-    display: flex;
+    position: absolute;
+    width: 480px;
+    height: 350px;
+    right: -6px;
+    top: 15px;
+    gap: 10px;
 
     img {
-      width: 100%; // Або фіксована ширина, якщо треба
-      height: auto;
+      width: 280px;
+      transform: scale(1);
 
-      // Твій каскадний зсув
-      &:nth-child(2) {
-        transform: translateX(1px);
+      &#line1 {
+        right: 0;
+        top: 35px;
       }
-      &:nth-child(3) {
-        transform: translateX(1px);
+
+      &#line2 {
+        right: -10px;
+      }
+
+      &#line3 {
+        right: -20px;
       }
     }
   }
