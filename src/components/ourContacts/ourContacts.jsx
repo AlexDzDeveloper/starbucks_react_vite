@@ -34,9 +34,9 @@ function OurContacts() {
           <img src={ContactsImg} alt="Contacts" />
         </div>
         <div className="contacts__Lines">
-          <img src={ContactLines} alt="Lines" />
-          <img src={ContactLines} alt="Lines" />
-          <img src={ContactLines} alt="Lines" />
+          <img src={ContactLines} alt="Lines" id="line1" />
+          <img src={ContactLines} alt="Lines" id="line2" />
+          <img src={ContactLines} alt="Lines" id="line3" />
         </div>
       </div>
 
