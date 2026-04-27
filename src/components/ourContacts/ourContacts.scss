@@ -80,31 +80,4 @@
       border-radius: 20px; // Як на макеті
     }
   }
-
-  &__Lines {
-    position: absolute;
-    width: 480px;
-    height: 350px;
-    right: -6px;
-    top: 15px;
-    gap: 10px;
-
-    img {
-      width: 280px;
-      transform: scale(1);
-
-      &#line1 {
-        right: 0;
-        top: 35px;
-      }
-
-      &#line2 {
-        right: -10px;
-      }
-
-      &#line3 {
-        right: -20px;
-      }
-    }
-  }
 }
