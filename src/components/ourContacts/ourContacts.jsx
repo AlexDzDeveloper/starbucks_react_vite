@@ -33,11 +33,6 @@ function OurContacts() {
         <div className="contacts__img">
           <img src={ContactsImg} alt="Contacts" />
         </div>
-        <div className="contacts__Lines">
-          <img src={ContactLines} alt="Lines" id="line1" />
-          <img src={ContactLines} alt="Lines" id="line2" />
-          <img src={ContactLines} alt="Lines" id="line3" />
-        </div>
       </div>
 
       <div className="contacts__decor"></div>
