@@ -1,0 +1,25 @@
+.products {
+	&__text {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: start;
+		max-width: 910px;
+
+		.header span {
+			background: $rightPlaceGrad;
+			position: relative;
+			@include gradText;
+
+			&:before {
+				@include greenShadow(200px, 200px);
+				right: -130px;
+				top: -110px;
+			}
+		}
+
+		.descr {
+			max-width: 444px;
+		}
+	}
+}
